@@ -10,7 +10,7 @@ import sys
 
 #from: https://github.com/datapythonista/mnist
 DATASET_DIRECTORY = 'data/'
-URL = 'http://yann.lecun.com/exdb/mnist/'
+URL = 'http://farsiocr.ir/Archive/'  #http://yann.lecun.com/exdb/mnist/
 
 def parse_idx(fd):
     DATA_TYPES = {0x08: 'B',  # unsigned byte
@@ -73,7 +73,7 @@ def download_and_parse_mnist_file(fname, target_dir=None, force=False):
 
 
 def train_images():
-    return download_and_parse_mnist_file('train-images-idx3-ubyte.gz')
+    return download_and_parse_mnist_file('DigitDB.zip') #train-images-idx3-ubyte.gz
 
 
 def test_images():
